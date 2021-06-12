@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+ {% block content %}
+
+ <div class="container">
+    <div class="shadow-lg p-3 mb-5 bg-body rounded">
+        {% if find_list %}
+        
+        <p> Web Result </p>
+        
+        {% for i in find_list%}
+
+        <div class="">
+            <h3 class="">{{i.0}}</h3>
+            <h4>{{i.1}}</h4>
+            <h4 class="">{{i.2}}</h4>
+        </div>
+
+
+        {% endif%}
+    </div>
+
+ </div>
+
+ {% endblock content%}
